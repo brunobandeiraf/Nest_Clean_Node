@@ -34,7 +34,18 @@ $ npm run test:cov
 ```
 
 ## Docker
-Criar docker
+```bash
+# Criar docker
 $ docker-compose up -d
-Visualizar status do docker
+# Visualizar status do docker
 $ docker ps
+```
+
+## Prisma
+```bash
+# Installation
+$ npm i prisma -D
+$ npm i @prisma/client
+$ npx prisma init
+$ npx prisma migrate dev
+$ npx prisma studio
