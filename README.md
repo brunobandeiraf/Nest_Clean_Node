@@ -32,3 +32,9 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Docker
+Criar docker
+$ docker-compose up -d
+Visualizar status do docker
+$ docker ps
