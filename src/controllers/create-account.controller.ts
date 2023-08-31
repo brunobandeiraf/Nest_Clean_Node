@@ -6,16 +6,18 @@ import {
     Post,
   } from '@nestjs/common'
   import { PrismaService } from 'src/prisma/prisma.service'
-  
+  import { hash } from 'bcryptjs'
+
   @Controller('/accounts')
   export class CreateAccountController {
-    constructor(private prisma: PrismaService) {}
+    constructor(private prisma: PrismaService) {} 
   
     @Post()
     @HttpCode(201)
-    async handle(@Body() body: any) {
+    async handle(@Body() body: any) { // padrão Nest
       const { name, email, password } = body
   
+      // Busca email passado como param
       const userWithSameEmail = await this.prisma.user.findUnique({
         where: {
           email,
@@ -23,16 +25,18 @@ import {
       })
   
       if (userWithSameEmail) {
-        throw new ConflictException(
+        throw new ConflictException( // Padrão Nest de retorno
           'User with same e-mail address already exists.',
         )
       }
-  
+      
+      const hashedPassword = await hash(password, 8)
+
       await this.prisma.user.create({
         data: {
           name,
           email,
-          password,
+          password: hashedPassword,
         },
       })
     }

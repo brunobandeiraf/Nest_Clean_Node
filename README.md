@@ -49,3 +49,9 @@ $ npm i @prisma/client
 $ npx prisma init
 $ npx prisma migrate dev
 $ npx prisma studio
+
+## Hash Password
+```bash
+# BcryptJS
+- npm i bcryptjs
+- npm i @types/bcryptjs -D
