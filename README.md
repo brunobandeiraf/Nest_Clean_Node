@@ -61,3 +61,8 @@ $ npx prisma studio
 # Zod
 - npm i zod
 - npm i zod-validation-error
+
+## Variavel Global
+```bash
+# Nestjs/Config
+- npm i @nestjs/config
