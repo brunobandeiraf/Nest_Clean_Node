@@ -55,3 +55,9 @@ $ npx prisma studio
 # BcryptJS
 - npm i bcryptjs
 - npm i @types/bcryptjs -D
+
+## Validation
+```bash
+# Zod
+- npm i zod
+- npm i zod-validation-error
