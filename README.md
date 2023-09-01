@@ -66,3 +66,8 @@ $ npx prisma studio
 ```bash
 # Nestjs/Config
 - npm i @nestjs/config
+
+## Authentication 
+```bash
+# Passport and JWT - Nest
+- npm i @nestjs/passport @nestjs/jwt
