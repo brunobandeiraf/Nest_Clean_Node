@@ -71,6 +71,8 @@ $ npx prisma studio
 ```bash
 # Passport and JWT - Nest
 - npm i @nestjs/passport @nestjs/jwt
+- npm i passport-jwt
+- npm i @types/passport-jwt -D
 # Private Key
 - openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
 # Public Key
