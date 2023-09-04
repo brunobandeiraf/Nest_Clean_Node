@@ -66,6 +66,8 @@ $ npx prisma studio
 ```bash
 # Nestjs/Config
 - npm i @nestjs/config
+# DotEnv
+- npm i dotenv -D
 
 ## Authentication 
 ```bash
