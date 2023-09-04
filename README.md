@@ -79,3 +79,11 @@ $ npx prisma studio
 - openssl rsa -pubout -in private_key.pem -out public_key.pem
 - base64 -i private_key.pem -o private_key-base64.txt
 - base64 -i public_key.pem -o public_key-base64.txt
+
+## Test E2E
+```bash
+# Vitest
+- npm i vitest unplugin-swc @swc/core @vitest/coverage-v8 -D
+- npm i vite-tsconfig-paths -D
+- npm run test
+- npm run test:e2e
