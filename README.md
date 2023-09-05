@@ -92,3 +92,9 @@ $ npx prisma studio
 # Run Test
 - npm run test
 - npm run test:e2e
+# Error TS
+- npm tsc --noEmit
+
+## 
+- npm i -D @faker-js/faker
+- npm i dayjs
