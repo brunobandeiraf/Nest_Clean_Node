@@ -49,18 +49,21 @@ $ npm i @prisma/client
 $ npx prisma init
 $ npx prisma migrate dev
 $ npx prisma studio
+```
 
 ## Hash Password
 ```bash
 # BcryptJS
 - npm i bcryptjs
 - npm i @types/bcryptjs -D
+```
 
 ## Validation
 ```bash
 # Zod
 - npm i zod
 - npm i zod-validation-error
+```
 
 ## Variavel Global
 ```bash
@@ -68,6 +71,7 @@ $ npx prisma studio
 - npm i @nestjs/config
 # DotEnv
 - npm i dotenv -D
+```
 
 ## Authentication 
 ```bash
@@ -81,6 +85,7 @@ $ npx prisma studio
 - openssl rsa -pubout -in private_key.pem -out public_key.pem
 - base64 -i private_key.pem -o private_key-base64.txt
 - base64 -i public_key.pem -o public_key-base64.txt
+```
 
 ## Test E2E
 ```bash
@@ -94,6 +99,7 @@ $ npx prisma studio
 - npm run test:e2e
 # Error TS
 - npm tsc --noEmit
+```
 
 ## 
 - npm i -D @faker-js/faker
